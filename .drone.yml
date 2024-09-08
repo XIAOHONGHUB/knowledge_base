@@ -1,0 +1,39 @@
+kind: pipeline
+type: docker
+name: build-and-deploy
+
+volumes:
+  - name: node_modules
+    host:
+      path: /var/lib/drone/node_modules
+  - name: vuepress_output
+    host:
+      path: /var/lib/drone/vuepress_output
+steps:
+  - name: build-vuepress
+    image: node:20.16.0
+    volumes:
+      - name: node_modules
+        path: /drone/src/node_modules
+      - name: vuepress_output
+        path: /drone/src/docs/.vuepress/dist
+    commands:
+      - cd /drone/src
+      - npm run build
+  # - name: notify
+  #   image: drone/notify
+  #   settings:
+  #     from: luojiahong276@gmail.com
+  #     to:
+  #       - 2446434034@qq.com
+  #     subject: Build {{ build.status }} - {{ build.repo.name }}
+  #     body: |
+  #       Build {{ build.number }} of {{ build.repo.name }} {{ build.status }}.
+  #       URL: {{ build.link }}        
+  #     smtp_host: smtp.gmail.com
+  #     smtp_port: 587
+  #     smtp_username: luojiahong276@gmail.com
+  #     smtp_password: LJH@123456
+  #     smtp_tls: true
+  #   when:
+  #     status: [ success, failure ]
