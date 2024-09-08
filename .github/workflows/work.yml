@@ -3,7 +3,7 @@ name: 打包vuepress项目
 on:
   push:
     branches:
-      - master  # 指定触发工作流的分支
+      - master
 
 permissions:
   contents: write
