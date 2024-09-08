@@ -1,8 +1,8 @@
 const nav = require('./config/nav.js');
 
 module.exports = {
-  title: "工诚云网知识库",
-  description: '工诚云网知识库就像是一座蕴藏着无尽智慧的宝库，它全面且细致地记录着工作中各种各样的技术要点，无论是先进的科技成果还是实用的操作技巧都能在这里找到它们的踪迹。', // 描述,以 <meta> 标签渲染到页面html中
+  title: "xiaohong知识库",
+  description: '知识库就像是一座蕴藏着无尽智慧的宝库，它全面且细致地记录着工作中各种各样的技术要点，无论是先进的科技成果还是实用的操作技巧都能在这里找到它们的踪迹。', // 描述,以 <meta> 标签渲染到页面html中
   base: '/', 
   head: [
     ['link', { rel: 'icon', href: '/img/logo-2.png' }],
