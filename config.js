@@ -3,7 +3,7 @@ const nav = require('./config/nav.js');
 module.exports = {
   title: "xiaohong知识库",
   description: '知识库就像是一座蕴藏着无尽智慧的宝库，它全面且细致地记录着工作中各种各样的技术要点，无论是先进的科技成果还是实用的操作技巧都能在这里找到它们的踪迹。', // 描述,以 <meta> 标签渲染到页面html中
-  base: '/', 
+  base: '/knowledge_base', 
   head: [
     ['link', { rel: 'icon', href: '/img/logo-2.png' }],
     ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown'}],
