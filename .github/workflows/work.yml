@@ -19,6 +19,8 @@ jobs:
 
     - name: 安装依赖和打包项目
       run: |
+        npm config set registry https://registry.npmmirror.com/
+        npm install
         npm run build
 
     - name: 部署
