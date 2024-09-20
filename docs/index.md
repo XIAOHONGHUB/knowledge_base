@@ -4,12 +4,12 @@ home: true
 heroText: xiaohong知识库
 tagline: xiaohong-知识宝库
 actionText: 立刻进入 →
-actionLink: /web/
+actionLink: /Embedded/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
 features: # 可选的
   - title: 嵌入式
-    details: html、css、js、总结等文章
+    details: C、嵌入式、STM32，学习总结
     link: /Embedded/ # 可选
     imgUrl: /img/web.png # 可选
   - title: 后端

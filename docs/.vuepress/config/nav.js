@@ -1,8 +1,8 @@
 module.exports = [
   {text: '首页', link: '/'},
   {
-    text: '前端',
-    link: '/web/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    text: '嵌入式',
+    link: '/Embedded/',  //目录页，vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: []
   },
   {
