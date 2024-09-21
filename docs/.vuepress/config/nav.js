@@ -6,12 +6,12 @@ module.exports = [
     items: []
   },
   {
-    text: '页面', 
+    text: '软件', 
     link: '/backEnd/',
     items: []
   },
   {
-    text: '技术',
+    text: '考试',
     link: '/examination/',
     items: [
       {text: '软考', link: '/pages/kaoqianfenxi01/'},

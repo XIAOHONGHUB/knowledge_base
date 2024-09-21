@@ -12,8 +12,8 @@ features: # 可选的
     details: C、嵌入式、STM32，学习总结
     link: /Embedded/ # 可选
     imgUrl: /img/web.png # 可选
-  - title: 后端
-    details: java、reds、git、总结等文章
+  - title: 软件学习
+    details: java、reds、git、vue、h5总结等文章
     link: /backEnd/
     imgUrl: /img/ui.png
   - title: 考试
