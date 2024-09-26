@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 100px;
+            padding: 0;
+            margin: 0;
+            /* border: 1px red solid; */
+            background-color: rgb(241, 241, 241);
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-bottom: 1px  rgba(255, 0, 0, 0.1) solid;
+        }
+        li a:hover{
+            background-color: black;
+            color: white;
+        }
+        li:hover :not(.active){
+            background-color: rgb(241, 241, 241);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">首页</a></li>
+        <li><a href="#">笔记本</a></li>
+        <li><a href="#">台式</a></li>
+        <li><a href="#">外设</a></li>
+        <li><a href="#">软件</a></li>
+    </ul>
+</body>
+</html>
