@@ -1,120 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-* {
-  box-sizing: border-box;
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title>
+<style> 
+div
+{
+	width:100px;
+	height:100px;
+	background:red;
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:5s;
+	animation-timing-function:linear;
+	animation-delay:2s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-play-state:running;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+@keyframes myfirst
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* 清除浮动 */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- 
-/* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	0%   {background:red; left:0px; top:0px;}
+	25%  {background:yellow; left:200px; top:0px;}
+	50%  {background:blue; left:200px; top:200px;}
+	75%  {background:green; left:0px; top:200px;}
+	100% {background:red; left:0px; top:0px;}
 }
 </style>
 </head>
 <body>
 
-<h2>响应式表单</h2>
-<p>响应式表带可以根据浏览器窗口的大小重新布局各个元素，我们可以通过重置浏览器窗口大小来查看效果：</p>
+<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
 
-<div class="container">
-  <form action="/action_page.php">
-  <div class="row">
-    <div class="col-25">
-      <label for="fname">First Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="lname">Last Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="country">Country</label>
-    </div>
-    <div class="col-75">
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Subject</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
-</div>
+<div></div>
 
 </body>
 </html>
