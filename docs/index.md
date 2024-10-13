@@ -11,15 +11,27 @@ features: # 可选的
   - title: 嵌入式
     details: C、嵌入式、STM32，学习总结
     link: /Embedded/ # 可选
-    imgUrl: /img/web.png # 可选
-  - title: 软件
+    imgUrl: /img/qianrushi.png # 可选
+  - title: 前端
+    details: html、css、h5、vue总结等文章
+    link: /web/
+    imgUrl: /img/qianduan.png
+  - title: 后端
     details: java、reds、git、vue、h5总结等文章
     link: /backEnd/
-    imgUrl: /img/ui.png
+    imgUrl: /img/houduan.png
   - title: 考试
     details: 软考、考公、考研、总结等文章
     link: /examination/
-    imgUrl: /img/other.png
+    imgUrl: /img/kaoshi.png
+  - title: 知识库
+    details: 知识库使用、搭建、优化等文章
+    link: /knowledgeBase/
+    imgUrl: /img/zhishiku.png
+  - title: 旅游
+    details: 旅游照片，旅游攻略等文章
+    link: /tourism/
+    imgUrl: /img/lvxing.png
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: simple

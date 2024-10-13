@@ -6,17 +6,24 @@ module.exports = [
     items: []
   },
   {
-    text: '软件', 
+    text: '前端', 
+    link: '/web/',
+    items: []
+  },
+  {
+    text: '后端', 
     link: '/backEnd/',
     items: []
   },
   {
     text: '考试',
     link: '/examination/',
-    items: [
-      {text: '软考', link: '/pages/kaoqianfenxi01/'},
-      {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
-    ]
+    items: []
+  },
+  {
+    text: '旅行', 
+    link: '/tourism/',
+    items: []
   },
   {text: '归档', link: '/archives/'},
   {
