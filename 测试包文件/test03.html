@@ -3,54 +3,47 @@
 <head>
 <meta charset="utf-8"> 
 <title>菜鸟教程(runoob.com)</title>
-<style> 
-div
-{
-	width:100px;
-	height:100px;
-	background:red;
-	position:relative;
-	animation-name:myfirst;
-	animation-duration:5s;
-	animation-timing-function:linear;
-	animation-delay:2s;
-	animation-iteration-count:infinite;
-	animation-direction:alternate;
-	animation-play-state:running;
-	/* Safari and Chrome: */
-	-webkit-animation-name:myfirst;
-	-webkit-animation-duration:5s;
-	-webkit-animation-timing-function:linear;
-	-webkit-animation-delay:2s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-direction:alternate;
-	-webkit-animation-play-state:running;
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'header header header header header header header'
+  'menu menu main main right right right'
+  'menu menu footer footer right right right';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-@keyframes myfirst
-{
-	0%   {background:red; left:0px; top:0px;}
-	25%  {background:yellow; left:200px; top:0px;}
-	50%  {background:blue; left:200px; top:200px;}
-	75%  {background:green; left:0px; top:200px;}
-	100% {background:red; left:0px; top:0px;}
-}
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
-{
-	0%   {background:red; left:0px; top:0px;}
-	25%  {background:yellow; left:200px; top:0px;}
-	50%  {background:blue; left:200px; top:200px;}
-	75%  {background:green; left:0px; top:200px;}
-	100% {background:red; left:0px; top:0px;}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 </style>
 </head>
 <body>
 
-<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+<h1>网页模版</h1>
 
-<div></div>
+<p>您可以使用 grid-area 属性来命名网格项。</p>
+<p>通过使用网格容器上的 grid 属性，您可以在设置网格布局时引用该名称。</p>
+<p>以下网格布局包含六列和三行：</p>
+
+<div class="grid-container">
+  <div class="item1">头部</div>
+  <div class="item2">菜单</div>
+  <div class="item3">主要内容区域</div>  
+  <div class="item4">右侧</div>
+  <div class="item5">底部</div>
+</div>
 
 </body>
 </html>

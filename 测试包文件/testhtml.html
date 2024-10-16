@@ -5,31 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-      div{
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        position: relative;
-        animation-name:myfirst;
-        animation-duration: 5s;
-        animation-timing-function:linear;
-
-        animation-delay: 2s;
-        animation-iteration-count:infinite ;
-        animation-direction: alternate;
-        animation-play-state: running;
-
-      }
-      @keyframes myfirst {
-        0%   {background:red; left:0px; top:0px;}
-	25%  {background:yellow; left:200px; top:0px;}
-	50%  {background:blue; left:200px; top:200px;}
-	75%  {background:green; left:0px; top:200px;}
-	100% {background:red; left:0px; top:0px;}
-      }
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+   .grid-container {
+      background-color: aqua;
+      display: grid;
+      grid:
+      'header header header header'
+      'menu menu main right'
+      'footer footer footer footer';
+      grid-gap: 10px;
+      
+      
+    }
   </style>
 </head>
 <body>
-  <div></div>
+  <div class="grid-container">
+    <div class="item1">头部</div>
+    <div class="item2">菜单</div>
+    <div class="item3">主要内容区域</div>  
+    <div class="item4">右侧</div>
+    <div class="item5">底部</div>
+  </div>
 </body>
 </html>
