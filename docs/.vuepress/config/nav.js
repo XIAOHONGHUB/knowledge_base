@@ -22,7 +22,7 @@ module.exports = [
   },
   {
     text: '旅行', 
-    link: '/tourism/',
+    link: '/nationalExamination/',
     items: []
   },
   {text: '归档', link: '/archives/'},
